@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel WebSite</title>
+    <style>
+        /* Basic CSS for layout (optional) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            /* max-width: 800px;
+            margin: 0 auto;
+            padding: 20px; */
+        }
+
+        .search-container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .search-container input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            margin-right: 5px;
+        }
+        .search-container input[type="submit"], 
+        .search-container input[type="reset"] {
+            padding: 8px;
+            cursor: pointer;
+        }
+        .divMainClass{
+            width: 100%;
+            
+
+        }
+        .divTopClass{
+            background-color: black;
+            color: white;
+            height: 100px;
+            width: 100%;
+        }
+        .divBottomClass{
+            height: 80%;
+        }
+        li{
+            display: inline-block;
+        }
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="divMain" class="divMainClass">
+        <div id="divTop" class="divTopClass">
+            <div style="float: left;height: inherit;width: 20%;">
+                <h3>TravelBloom</h3>
+            </div>
+            <div style="float: left;height: inherit;width: 40%;color: white;">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="search-container" style="float: left;height: inherit;width: 40%;">
+                <form id="searchForm">
+                    <input type="text" id="searchInput" placeholder="Enter destination or keywords...">
+                    <input type="submit" value="Search">
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
+        </div>
+        <div id="divBottom" class="divBottomClass"></div>
+    </div>
+    <!-- Navigation Links -->
+    <!-- <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav> -->
+    
+    <!-- Search Bar -->
+    <!-- <div class="search-container">
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Enter keywords...">
+            <input type="submit" value="Search">
+            <input type="reset" value="Reset">
+        </form>
+    </div> -->
+    
+    <!-- JavaScript to handle form submission and reset -->
+    <script src="./travel_recommendation.js"></script>
+</body>
+</html>
